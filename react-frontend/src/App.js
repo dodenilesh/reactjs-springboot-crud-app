@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import ListEmployeeComponent from './components/ListEmployeeComponent';
 import CreateEmployeeComponent from './components/CreateEmployeeComponent';
 import ViewEmployeeComponent from './components/ViewEmployeeComponent';
@@ -13,7 +13,7 @@ function App() {
           
             <HeaderComponent />
               <div className="container">
-                <Switch>
+                <Routes>
 
                     <Route path = "/"  exact component = {ListEmployeeComponent}></Route>
                                       
@@ -24,7 +24,7 @@ function App() {
                     <Route path = "/view-employee/:id"  component = {ViewEmployeeComponent}></Route>
                     
                     {/* <Route path = "/update-employee/:id" component = { UpdateEmployeeComponent }></Route> */}
-                </Switch>
+                </Routes>
               </div>
             <FooterComponent/>
       </Router>
