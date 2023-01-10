@@ -23,7 +23,7 @@ import net.javaguides.springboot.model.Employee;
 import net.javaguides.springboot.repository.EmployeeRepository;
 import net.javaguides.springboot.exception.ResourceNotFoundException;
 
-@CrossOrigin( origins = "http://localhost:3000")
+@CrossOrigin( origins = "*")
 @RestController
 @RequestMapping("/api/v1/")
 public class EmployeeController {
